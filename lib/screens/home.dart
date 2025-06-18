@@ -199,7 +199,7 @@ class HomePage extends StatelessWidget {
       floatingActionButton: FloatingActionButton(
         onPressed: () {},
         child: Icon(Icons.edit),
-        backgroundColor: Theme.of(context).accentColor,
+        backgroundColor: Theme.of(context).colorScheme.secondary,
       ),
       //BottomnavBar
       bottomNavigationBar: Container(

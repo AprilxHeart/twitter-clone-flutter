@@ -9,6 +9,7 @@
 .buildlog/
 .history
 .svn/
+migrate_working_dir/
 
 # IntelliJ related
 *.iml
@@ -16,17 +17,32 @@
 *.iws
 .idea/
 
-# Visual Studio Code related
-.vscode/
+# The .vscode folder contains launch configuration and tasks you configure in
+# VS Code which you may wish to be included in version control, so this line
+# is commented out by default.
+#.vscode/
 
 # Flutter/Dart/Pub related
 **/doc/api/
+**/ios/Flutter/.last_build_id
 .dart_tool/
 .flutter-plugins
+.flutter-plugins-dependencies
 .packages
 .pub-cache/
 .pub/
-build/
+/build/
+
+# Symbolication related
+app.*.symbols
+
+# Obfuscation related
+app.*.map.json
+
+# Android Studio will place build artifacts here
+/android/app/debug
+/android/app/profile
+/android/app/release
 
 # Android related
 **/android/**/gradle-wrapper.jar
@@ -56,12 +72,20 @@ build/
 **/ios/.generated/
 **/ios/Flutter/App.framework
 **/ios/Flutter/Flutter.framework
+**/ios/Flutter/Flutter.podspec
 **/ios/Flutter/Generated.xcconfig
 **/ios/Flutter/app.flx
 **/ios/Flutter/app.zip
 **/ios/Flutter/flutter_assets/
+**/ios/Flutter/flutter_export_environment.sh
 **/ios/ServiceDefinitions.json
 **/ios/Runner/GeneratedPluginRegistrant.*
+
+# macOS
+**/macos/Flutter/GeneratedPluginRegistrant.swift
+
+# Coverage
+coverage/
 
 # Exceptions to above rules.
 !**/ios/**/default.mode1v3
@@ -69,3 +93,21 @@ build/
 !**/ios/**/default.pbxuser
 !**/ios/**/default.perspectivev3
 !/packages/flutter_tools/test/data/dart_dependencies_test/**/.packages
+
+# FVM
+.fvm/
+
+# Environment variables
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Generated files
+*.g.dart
+*.freezed.dart
+
+# Temporary files
+*.tmp
+*.temp
