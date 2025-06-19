@@ -44,7 +44,7 @@ A modern Twitter clone built with Flutter, featuring a beautiful UI, authenticat
 
 1. **Clone the repository**
    ```bash
-   git clone https://github.com/yourusername/twitter-clone-flutter.git
+   git clone https://github.com/AprilxHeart/twitter-clone-flutter.git
    cd twitter-clone-flutter
    ```
 
